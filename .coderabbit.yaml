@@ -1,0 +1,23 @@
+review:
+  enabled: true
+  reviewers:
+    - "@coderabbitai"
+  rules:
+    - name: "typescript"
+      enabled: true
+    - name: "eslint"
+      enabled: true
+    - name: "tailwind"
+      enabled: true
+    - name: "nextjs"
+      enabled: true
+  paths:
+    include:
+      - "apps/**"
+      - "packages/**"
+    exclude:
+      - "packages/eslint-config/**"
+      - "packages/typescript-config/**"
+comments:
+  style: "suggestion"
+  verbosity: "medium"
